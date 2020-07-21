@@ -1,11 +1,3 @@
-// window.addEventListener('DOMContentLoaded', function(){
-//   var header = $(".container-wrapper").offset().top;
-//   $(window).scroll(function(){
-//       if($(window).scrollTop() > header){
-//           $(".container-wrapper").css("position","fixed");
-//       }
-//   });
-// });
 
 window.addEventListener('DOMContentLoaded', function(){
   $('.hamburger').on('click', function () {
@@ -23,13 +15,11 @@ window.addEventListener('DOMContentLoaded', function(){
         slidesPerView: 1.33,
         spaceBetween: 20,
         breakpoints: {
-            // when window width is >= 320px
            
             768: {
                 spaceBetween: 20,
                 slidesPerView: 3
               },
-            // when window width is >= 640px
             1226: {
               spaceBetween: 40,
               slidesPerView: 2.8,
@@ -65,8 +55,6 @@ window.addEventListener('DOMContentLoaded', function(){
 });
 window.addEventListener('DOMContentLoaded', function(){
     $('.faq').click(function() {
-        // $('.faq').find('.a').slideUp();
-        // $('.faq').find('.q').css('margin-bottom','0px');
         var $answer = $(this).find('.a');
         if($answer.hasClass('open')) {
             $answer.removeClass('open');
@@ -113,41 +101,3 @@ window.addEventListener('DOMContentLoaded', function(){
   });
 
 });
-
-// window.addEventListener('DOMContentLoaded', function(){
-//     $('.faq').click(function() {
-//         $('.a').removeClass('open');
-//         $(this).find('.a').addClass('open');
-        
-//     });
-// });
-
-
-
-// function getRandomNumber() {
-//     return 5
-//     Math.floor(Math.random() * 100)
-// }
-// const num = getRandomNumber()
-// const num = undefined
-
-
-// // 10で割り切れるかチェックする
-// function isDividable(num) {
-//     // 数字じゃなかったらfalse
-//     if (!(num instanceof Number)) {
-//         return false
-//     }
-//     return !(num % 10)
-// }
-
-// isDividable(100) //=> true
-// isDividable(101) //=> false
-// isDividable('aaa') //=> false
-
-
-// function setId(id) {
-//     document.getElementById('target').innerHTML = id
-// }
-// setId(123456)
-// undefined
